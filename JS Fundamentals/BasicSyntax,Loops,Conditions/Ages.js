@@ -10,4 +10,3 @@ function func(input) {
 }
 
 func(-121);
-P
