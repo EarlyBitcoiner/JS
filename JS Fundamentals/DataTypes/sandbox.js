@@ -1,6 +1,7 @@
 function func() {
-    
-    let number = 2;
+  let name = "Petar";
+  let b = name.includes("Pe");
+  console.log(b);
 }
 
-console.log(number);
+func();
