@@ -1,0 +1,5 @@
+# Node_modules
+[Nn]ode_modules/
+
+# json files should be ignored
+*.json
