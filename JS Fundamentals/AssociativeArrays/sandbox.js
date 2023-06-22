@@ -1,13 +1,29 @@
-let map = new Map();
-map.set("key1", "value1");
-map.set("key3", "value3");
-map.set("key2", "value2");
+function func(input) {
+  let students = Number(input[1]);
+  let flour = Number(input[2]);
+  let budget = Number(input[0]);
+  let egg = Number(input[3]);
+  let apron = Number(input[4]);
 
-let array = Array.from(map); // Convert Map to Array
-let sortedArray = array.sort(); // Sort the Array
+  let freeflour = Math.floor(students / 5);
+  let aprons = Math.ceil(students + students * 0.2);
 
-map = new Map(sortedArray); // Convert the sorted Array back to Map
+  let moneyNeeded =
+    aprons * apron +
+    10 * egg * students +
+    (flour * students - freeflour * flour);
 
-console.log(map);
-// Output:
-// Map { 'key1' => 'value1', 'key2' => 'value2', 'key3' => 'value3' }
+  if (moneyNeeded > budget) {
+    console.log(`${(moneyNeeded - budget).toFixed(2)}$ more needed.`);
+  } else {
+    console.log(`Items purchased for ${moneyNeeded.toFixed(2)}$.`);
+  }
+}
+
+func([50,
+    2,
+    1.0,
+    0.10,
+10.0]);
+
+//func(50, 2, 1.0, 0.1, 10.0);
