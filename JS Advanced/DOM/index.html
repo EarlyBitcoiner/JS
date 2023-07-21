@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <h1>This is real crazy</h1>
+
+        <ul id="items">
+            <li>rainbow six</li>
+            <li>MMA</li>
+            <li>boxing is cool</li>
+        </ul>
+        <br>
+        <textarea id="result"></textarea>
+        <br>
+        <button onclick="collectList()">Extract Text!</button>
+
+        <br>
+        <input type="text" id="x"/> +
+        <input type="text" id="y"/> =
+        <input type="text" id="z" readonly="readonly"/>
+        <button onclick="sum()">Sum numbers</button>
+
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        <a id="ahref" href="#" onclick="show()">Show More...</a>
+        </p>
+        <p id="hidden" style="display:none">Eum illum, eos fuga deleniti debitis qui, veniam voluptatem, quis ad vitae doloremque maxime! Odit maxime, nobis id rerum beatae hic impedit!</p>
+        <br>
+
+        <br>
+        <table border="1" id="t1">
+            <tr><th>Product</th><th>Cost</th></tr>
+            <tr><td>Beer</td><td>5.5</td></tr>
+            <tr><td>Fries</td><td>4.5</td></tr>
+            <tr><td>Total:</td><td id="tableSum"></td></tr>
+        </table>
+        <button onclick="tableSum()">Sum products</button>
+        <br>
+
+        <br>
+        <table border="1">
+            <tr><th>Name</th><th>Town</th></tr>
+            <tr><td>Eve</td><td>Sofia</td></tr>
+            <tr><td>Petar</td><td>Troyan</td></tr>
+            <tr><td>Ivan</td><td>Smirnenski</td></tr>
+        </table>
+        <button onclick="colorize()">Colorize Table</button>
+        <br>
+
+        <script src="index.js"></script>
+    </body>
+</html>
